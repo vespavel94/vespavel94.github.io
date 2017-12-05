@@ -5,7 +5,7 @@
     margin: 0;
 }
 
-a{
+a {
     cursor: pointer;
 }
 
@@ -56,7 +56,7 @@ header {
     color: #81b3d2;
 }
 
-.menu__link:active{
+.menu__link:active {
     opacity: 0.3;
     color: #000000;
 }
@@ -140,8 +140,11 @@ header {
 .reason__img__block {
     width: 100%;
     max-width: 800px;
-    background: url("img/photo-city-1x.jpg") no-repeat center;
-    background-size: cover;
+}
+
+.reason__img__block__img {
+    width: 100%;
+    height: 100%;
 }
 
 .reason--blue {
@@ -206,19 +209,19 @@ header {
     outline: none;
 }
 
-.hotel-search__button:hover{
+.hotel-search__button:hover {
     background-color: #669ec0;
 }
 
-.hotel-search__button:active{
+.hotel-search__button:active {
     background-color: #5496bd;
 }
 
-.button--disabled{
+.button--disabled {
     background-color: #e5e5e5;
 }
 
-.hotel-search__button:active span{
+.hotel-search__button:active span {
     opacity: 0.3;
 }
 
@@ -252,7 +255,7 @@ header {
     text-decoration: none;
 }
 
-.footer__social{
+.footer__social {
     height: 48px;
     width: 156px;
     display: flex;
@@ -260,21 +263,21 @@ header {
     justify-content: space-between;
 }
 
-.social__icon{
+.social__icon {
     display: block;
     width: 48px;
     height: 48px;
 }
 
-.twitter{
+.twitter {
     background: #81b3d2 url("img/icon-twitter-svg.png") no-repeat center;
 }
 
-.facebook{
+.facebook {
     background: #81b3d2 url("img/icon-facebook-svg.png") no-repeat center;
 }
 
-.youtube{
+.youtube {
     background: #81b3d2 url("img/icon-youtube-svg.png") no-repeat center;
 }
 
@@ -284,7 +287,7 @@ header {
     justify-content: flex-end;
 }
 
-.html_academy_copyright__link{
+.html_academy_copyright__link {
     color: #000000;
     font-size: 14px;
     font-weight: 400;
@@ -295,6 +298,6 @@ header {
     align-items: center;
 }
 
-.html_academy_copyright__logo{
+.html_academy_copyright__logo {
     margin-left: 11px;
 }
