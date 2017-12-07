@@ -61,6 +61,19 @@ header {
     color: #000000;
 }
 
+.menu__link--active {
+    color: #766357;
+}
+
+.menu__link--active:hover {
+    color: #604e43;
+}
+
+.menu__link--active:active {
+    opacity: 0.3;
+    color: #766357;
+}
+
 .intro__wallpaper {
     height: 518px;
     background-image: url("img/intro-triangle-svg.png"), url("img/back-desktop-jpg.jpg");
@@ -227,7 +240,11 @@ header {
 
 .map {
     height: 350px;
-    background-color: grey;
+    width: 100%;
+}
+
+.map__google {
+    width: 100%;
 }
 
 .footer {
@@ -281,6 +298,14 @@ header {
     background: #81b3d2 url("img/icon-youtube-svg.png") no-repeat center;
 }
 
+.social__icon:hover {
+    background-color: #669ec0;
+}
+
+.social__icon:active {
+    background-color: #5496bd;
+}
+
 .html_academy_copyright {
     display: flex;
     flex-wrap: nowrap;
@@ -296,6 +321,15 @@ header {
     text-decoration: none;
     display: flex;
     align-items: center;
+}
+
+.html_academy_copyright__link:hover {
+    color: #81b3d2;
+}
+
+.html_academy_copyright__link:active{
+    color: #000000;
+    opacity: 0.3;
 }
 
 .html_academy_copyright__logo {

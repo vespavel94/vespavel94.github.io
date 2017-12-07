@@ -16,10 +16,14 @@
     <header class="header">
         <nav class="menu">
             <ul class="menu__list">
-                <li class="menu__item"><a href="#" class="menu__link">главная</a></li>
+                <li class="menu__item"><a href="#" class="menu__link menu__link--active">главная</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">фото и видео</a></li>
                 <li class="menu__item logo_li"><a href="#" class="menu__link">
-                    <img src="img/logotype-desktop.png" alt="logo" class="menu__link__logo">
+                    <picture class="menu__link__logo">
+                        <source srcset="img/logotype-desktop.png" media="(min-width: 1200px)">
+                        <source srcset="img/logotype-tablet-svg.png" media="(min-width: 768px)">
+                        <img src="img/logotyle-mobile-svg.png" alt="logo">
+                    </picture>
                 </a></li>
                 <li class="menu__item"><a href="#" class="menu__link">форма отзыва</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">html academy</a></li>
@@ -110,7 +114,9 @@
     </div>
 
     <div class="map">
-
+        <iframe class="map__google"
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d419387.26257592824!2d-111.71371!3d34.794292!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1512605931769"
+                width="1200" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
     <footer class="footer">
@@ -126,12 +132,15 @@
         </div>
         <div class="footer__column">
             <div class="html_academy_copyright">
-                <a href="" class="html_academy_copyright__link">разработано
-                    <img src="img/htmlacademy-svg.png" alt="" class="html_academy_copyright__logo">
+                <a href="#" class="html_academy_copyright__link">разработано
+                        <img class="html_academy_copyright__logo" src="img/htmlacademy-svg.png" alt="">
                 </a>
             </div>
         </div>
     </footer>
 </div>
+<script>
+
+</script>
 </body>
 </html>
