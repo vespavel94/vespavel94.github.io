@@ -10,10 +10,8 @@ $(document).ready(function () {
     });
 
     $(".nav__tumbler").on("click", function () {
-        console.log("triggered");
         var shiftingMenu = $(".menu__item");
         shiftingMenu.splice(2,1);
-        console.log(shiftingMenu);
         shiftingMenu.each(function () {
             $(this).toggleClass("visible");
         });
