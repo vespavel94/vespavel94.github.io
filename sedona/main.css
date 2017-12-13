@@ -20,6 +20,7 @@ a {
 }
 
 header {
+    z-index: 99;
     text-align: center;
     text-transform: uppercase;
 }
@@ -165,9 +166,14 @@ header {
     max-width: 800px;
 }
 
-.reason__img__block__img {
-    width: 100%;
-    height: 100%;
+.reason__img__block:nth-child(2) {
+    background: url("img/photo-city-1x.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.reason__img__block:nth-child(1) {
+    background: url("img/photo-bridge-1x-desktop.jpg") no-repeat center;
+    background-size: cover;
 }
 
 .reason--blue {
@@ -346,6 +352,30 @@ header {
     margin-left: 11px;
 }
 
+@media (max-width: 1200px) and (min-width: 520px) {
+    .reason__img__block:nth-child(2) {
+        background-image: url("img/photo-city-1x-tablet.jpg");
+        height: 256px;
+    }
+
+    .reason__img__block:nth-child(1) {
+        background-image: url("img/photo-bridge-1x-tablet.jpg");
+        height: 256px;
+    }
+}
+
+@media (max-width: 519px) {
+    .reason__img__block:nth-child(2) {
+        background-image: url("img/photo-city-1x-mobile.jpg");
+        height: 256px;
+    }
+
+    .reason__img__block:nth-child(1) {
+        background-image: url("img/photo-bridge-1x-mobile.jpg");
+        height: 260px;
+    }
+}
+
 @media (max-width: 1000px) {
     .footer__hashtag {
         margin-left: 0;
@@ -353,6 +383,7 @@ header {
 }
 
 @media (max-width: 768px) {
+
     .header {
         position: fixed;
         width: 100%;
@@ -431,82 +462,133 @@ header {
         margin: 0 auto;
     }
 
-    .reasons__header__title{
+    .reasons__header__title {
         margin: 0 auto 30px;
         font-size: 18px;
         line-height: 26px;
         width: 265px;
     }
 
-    .reasons__row{
+    .reasons__row {
         flex-direction: column;
         height: auto;
     }
 
-    .reason{
+    .reason {
         width: 100%;
         max-width: none;
+        padding-top: 45px;
     }
 
-    .reason__title{
+    .reason__title {
         line-height: 26px;
         font-size: 18px;
         white-space: nowrap;
     }
 
-    .reason__title br{
+    .reason__title br {
         display: none;
     }
 
-    .reasons__row:nth-child(2) .reason--blue{
+    .reasons__row:nth-child(2) .reason--blue {
         padding-top: 93px;
         background-image: url("img/white copy 2@1x.png");
         background-position: top;
         background-repeat: no-repeat;
         background-size: contain;
     }
+
+    .reasons__icon__row {
+        margin-top: 41px;
+    }
+
+    .reason__icon {
+        padding: 0 40px 42px 15px;
+        position: relative;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .icon__title {
+        margin-left: 56px;
+        text-align: left;
+        margin-bottom: 13px;
+    }
+
+    .icon__text {
+        margin-left: 56px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .reason__icon__img {
+        position: absolute;
+        top: -9px;
+        left: 19px;
+    }
+
+    .reason__icon__picture {
+        width: 39px;
+        height: 37px;
+    }
+
+    .reason__icon:nth-child(2) {
+        order: 3;
+    }
+
+    .reason--gray {
+        border-bottom: 1px solid #d6d6d6;
+    }
+
+    .reason--gray:last-child {
+        border: none;
+    }
+
+    .hotel-search {
+        box-sizing: border-box;
+        width: 320px;
+        margin: 0 auto;
+        height: auto;
+        padding: 33px 20px 49px;
+    }
+
+    .hotel-search__title {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    .hotel-search__description {
+        margin-bottom: 40px;
+    }
+
+    .hotel-search__description br {
+        display: none;
+    }
+
+    .hotel-search__button {
+        width: 280px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .footer__column {
+        margin-bottom: 40px;
+    }
+
+    .footer__column:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer__hashtag {
+        display: block;
+        text-align: center;
+    }
+
+    .html_academy_copyright {
+        justify-content: center;
+    }
 }
-
-/*@media (max-width: 320px) {*/
-/*.intro__wallpaper {*/
-/*padding-top: 56px;*/
-/*height: 389px;*/
-/*background-image: url("img/intro-triangle-svg.png"), url("img/back-mobile-jpg.jpg");*/
-/*background-size: auto, 320px 389px;*/
-/*background-repeat: no-repeat;*/
-/*background-position: 50% bottom;*/
-/*}*/
-
-/*.intro__img__text {*/
-/*width: 282px;*/
-/*height: 214px;*/
-/*padding-top: 81px;*/
-/*}*/
-
-/*.reasons__row{*/
-/*display: flex;*/
-/*flex-direction: column;*/
-/*}*/
-
-/*.reasons__header{*/
-/*box-sizing: border-box;*/
-/*height: 202px;*/
-/*padding: 43px 30px 11px;*/
-/*}*/
-
-/*.reason{*/
-/*max-width: 320px;*/
-/*}*/
-/**/
-/*.reasons__row:nth-child(2) .reason--blue{*/
-/*background-image: url("img/white-copy-2.png");*/
-/*background-size: auto;*/
-/*background-repeat: no-repeat;*/
-/*background-position: 50% top;*/
-/*}*/
-
-/*!*.reasons__row:nth-child(0){*!*/
-/*!*height: 100px;*!*/
-
-/*!*}*!*/
-/*}*/
