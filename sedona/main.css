@@ -11,7 +11,7 @@ a {
 
 .wrapper {
     max-width: 1200px;
-    min-width: 389px;
+    min-width: 320px;
     margin: 0 auto;
     background-color: #ffffff;
     text-transform: uppercase;
@@ -117,6 +117,7 @@ header {
 
 .reasons__header__description {
     font-size: 14px;
+    line-height: 26px;
 }
 
 .reasons__row {
@@ -346,12 +347,10 @@ header {
 }
 
 @media (max-width: 1000px) {
-    .footer__hashtag{
+    .footer__hashtag {
         margin-left: 0;
     }
 }
-
-
 
 @media (max-width: 768px) {
     .header {
@@ -412,57 +411,102 @@ header {
     .intro__wallpaper {
         padding-top: 55px;
         height: 389px;
-        background-image: url("img/white-copy-2.png"), url("img/bg-back-mobile@2x.jpg");
-        background-position: 50% bottom;
-        background-size: 103%, cover;
+        background-image: url("img/intro-triangle-svg_tablet.png"), url("img/bg-back-mobile@2x.jpg");
+        background-position: 50% bottom, 50% 45px;
+        background-size: auto, cover;
         background-repeat: no-repeat;
     }
 
+    .intro__img__text {
+        max-width: 282px;
+        padding-top: 90px;
+    }
 
+    .reasons__header {
+        display: block;
+        box-sizing: border-box;
+        max-width: 320px;
+        height: auto;
+        padding: 43px 25px 0;
+        margin: 0 auto;
+    }
+
+    .reasons__header__title{
+        margin: 0 auto 30px;
+        font-size: 18px;
+        line-height: 26px;
+        width: 265px;
+    }
+
+    .reasons__row{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .reason{
+        width: 100%;
+        max-width: none;
+    }
+
+    .reason__title{
+        line-height: 26px;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .reason__title br{
+        display: none;
+    }
+
+    .reasons__row:nth-child(2) .reason--blue{
+        padding-top: 93px;
+        background-image: url("img/white copy 2@1x.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
-
-
 /*@media (max-width: 320px) {*/
-    /*.intro__wallpaper {*/
-        /*padding-top: 56px;*/
-        /*height: 389px;*/
-        /*background-image: url("img/intro-triangle-svg.png"), url("img/back-mobile-jpg.jpg");*/
-        /*background-size: auto, 320px 389px;*/
-        /*background-repeat: no-repeat;*/
-        /*background-position: 50% bottom;*/
-    /*}*/
+/*.intro__wallpaper {*/
+/*padding-top: 56px;*/
+/*height: 389px;*/
+/*background-image: url("img/intro-triangle-svg.png"), url("img/back-mobile-jpg.jpg");*/
+/*background-size: auto, 320px 389px;*/
+/*background-repeat: no-repeat;*/
+/*background-position: 50% bottom;*/
+/*}*/
 
-    /*.intro__img__text {*/
-        /*width: 282px;*/
-        /*height: 214px;*/
-        /*padding-top: 81px;*/
-    /*}*/
+/*.intro__img__text {*/
+/*width: 282px;*/
+/*height: 214px;*/
+/*padding-top: 81px;*/
+/*}*/
 
-    /*.reasons__row{*/
-        /*display: flex;*/
-        /*flex-direction: column;*/
-    /*}*/
+/*.reasons__row{*/
+/*display: flex;*/
+/*flex-direction: column;*/
+/*}*/
 
-    /*.reasons__header{*/
-        /*box-sizing: border-box;*/
-        /*height: 202px;*/
-        /*padding: 43px 30px 11px;*/
-    /*}*/
+/*.reasons__header{*/
+/*box-sizing: border-box;*/
+/*height: 202px;*/
+/*padding: 43px 30px 11px;*/
+/*}*/
 
-    /*.reason{*/
-        /*max-width: 320px;*/
-    /*}*/
-    /**/
-    /*.reasons__row:nth-child(2) .reason--blue{*/
-        /*background-image: url("img/white-copy-2.png");*/
-        /*background-size: auto;*/
-        /*background-repeat: no-repeat;*/
-        /*background-position: 50% top;*/
-    /*}*/
+/*.reason{*/
+/*max-width: 320px;*/
+/*}*/
+/**/
+/*.reasons__row:nth-child(2) .reason--blue{*/
+/*background-image: url("img/white-copy-2.png");*/
+/*background-size: auto;*/
+/*background-repeat: no-repeat;*/
+/*background-position: 50% top;*/
+/*}*/
 
-    /*!*.reasons__row:nth-child(0){*!*/
-        /*!*height: 100px;*!*/
+/*!*.reasons__row:nth-child(0){*!*/
+/*!*height: 100px;*!*/
 
-    /*!*}*!*/
+/*!*}*!*/
 /*}*/
