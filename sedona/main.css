@@ -223,8 +223,20 @@ header {
     line-height: 24px;
 }
 
+.hotel-search__button-overlay-wrapper {
+    z-index: 110;
+    position: relative;
+    max-width: 458px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.hotel-search__button-overlay-wrapper--triggered {
+    max-width: 568px;
+}
+
 .hotel-search__button {
-    width: 458px;
+    width: 100%;
     height: 58px;
     background-color: #81b3d2;
     color: #ffffff;
@@ -236,6 +248,7 @@ header {
     cursor: pointer;
     border: none;
     outline: none;
+    transition: 0.3s;
 }
 
 .hotel-search__button:hover {
@@ -246,12 +259,102 @@ header {
     background-color: #5496bd;
 }
 
-.button--disabled {
-    background-color: #e5e5e5;
-}
-
 .hotel-search__button:active span {
     opacity: 0.3;
+}
+
+.button--triggered {
+    background-color: #766357
+}
+
+.button--triggered:hover {
+    background-color: #5b4e46;
+}
+
+.hotel-search__form {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    padding: 55px;
+    transition: 3.5s;
+}
+
+.hotel-search__form input {
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-family: "PT Sans", Arial, sans-serif;
+    width: 100%;
+    max-width: 346px;
+    height: 38px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    padding: 14px;
+}
+
+.hotel-search__form--visible {
+    display: block;
+}
+
+.hotel-search__form div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+}
+
+.search-form__optional-data {
+    margin-bottom: 54px !important;
+}
+
+.search-form__optional-data div {
+    margin: 0;
+}
+
+.search-form__optional-data input {
+    width: 38px;
+}
+
+.optional-data__adult label {
+    margin-right: 41px;
+}
+
+.optional-data__children label {
+    margin-right: 27px;
+}
+
+.form__counter button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    height: 38px;
+    width: 38px;
+    background-color: #f2f2f2;
+}
+
+.hotel-search__form label {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 41px;
+}
+
+.hotel-search__form .search-form__submit-button {
+    height: 58px;
+    font-family: "PT Sans", Arial, sans-serif;
+    background-color: #81b3d2;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    max-width: 458px;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 .map {

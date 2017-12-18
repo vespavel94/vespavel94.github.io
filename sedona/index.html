@@ -113,7 +113,39 @@
         <h2 class="hotel-search__title">заинтересовались?</h2>
         <p class="hotel-search__description">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
             предложения гостиниц в седоне</p>
-        <button class="hotel-search__button"><span>найти гостиницу</span></button>
+        <div class="hotel-search__button-overlay-wrapper">
+            <button class="hotel-search__button"><span>найти гостиницу</span></button>
+
+            <form action="" class="hotel-search__form" onsubmit="return false;">
+                <div class="search-form__in-date-block">
+                    <label for="search-form__in-date">дата заезда:</label>
+                    <input type="text" id="search-form__in-date" placeholder="Укажите дату">
+                </div>
+                <div class="search-form__out-date-block">
+                    <label for="search-form__out-date">дата выезда:</label>
+                    <input type="text" id="search-form__out-date" placeholder="Укажите дату">
+                </div>
+                <div class="search-form__optional-data">
+                    <div class="optional-data__adult">
+                        <label for="search-form__adult-count">Взрослые:</label>
+                        <div class="form__counter">
+                            <button class="form-counter__decrement">-</button>
+                            <input type="text" id="search-form__adult-count" disabled value="0">
+                            <button class="form-counter__increment">+</button>
+                        </div>
+                    </div>
+                    <div class="optional-data__children">
+                        <label for="search-form__children-count">Дети:</label>
+                        <div class="form__counter">
+                            <button class="form-counter__decrement">-</button>
+                            <input type="text" id="search-form__children-count" disabled value="0">
+                            <button class="form-counter__increment">+</button>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class="search-form__submit-button" value="найти">
+            </form>
+        </div>
     </div>
 
     <div class="map">
