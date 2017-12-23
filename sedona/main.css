@@ -273,7 +273,7 @@ header {
 
 .hotel-search__form {
     box-sizing: border-box;
-    display: block;
+    display: none;
     width: 100%;
     position: absolute;
     background-color: #ffffff;

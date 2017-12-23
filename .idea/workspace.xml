@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c0c25dd-f4a7-4577-91ec-3b47dac8a952" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/sedona/index.html" afterPath="$PROJECT_DIR$/sedona/index.html" />
       <change beforePath="$PROJECT_DIR$/sedona/js/main.js" afterPath="$PROJECT_DIR$/sedona/js/main.js" />
       <change beforePath="$PROJECT_DIR$/sedona/main.css" afterPath="$PROJECT_DIR$/sedona/main.css" />
     </list>
@@ -38,21 +37,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.55050206">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sedona/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="518">
-                  <caret line="136" column="57" lean-forward="true" selection-start-line="136" selection-start-column="57" selection-end-line="136" selection-end-column="57" />
+                <state relative-caret-position="2244">
+                  <caret line="132" column="9" lean-forward="false" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sedona/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                <state relative-caret-position="238">
+                  <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
                   <folding />
                 </state>
               </provider>
@@ -65,8 +64,8 @@
           <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sedona/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="454">
-                  <caret line="324" column="23" lean-forward="true" selection-start-line="324" selection-start-column="23" selection-end-line="324" selection-end-column="23" />
+                <state relative-caret-position="233">
+                  <caret line="275" column="15" lean-forward="true" selection-start-line="275" selection-start-column="14" selection-end-line="275" selection-end-column="15" />
                   <folding />
                 </state>
               </provider>
@@ -82,9 +81,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sedona/js/main.js" />
-        <option value="$PROJECT_DIR$/sedona/main.css" />
         <option value="$PROJECT_DIR$/sedona/index.html" />
+        <option value="$PROJECT_DIR$/sedona/main.css" />
+        <option value="$PROJECT_DIR$/sedona/js/main.js" />
       </list>
     </option>
   </component>
@@ -178,11 +177,13 @@
       <workItem from="1513198643295" duration="7999000" />
       <workItem from="1513380978028" duration="8450000" />
       <workItem from="1513555024348" duration="3606000" />
+      <workItem from="1513731245014" duration="2326000" />
+      <workItem from="1514058477987" duration="84000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50865000" />
+    <option name="totallyTimeSpent" value="53275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -603,26 +604,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sedona/js/main.js">
+    <entry file="file://$PROJECT_DIR$/sedona/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="2244">
+          <caret line="132" column="9" lean-forward="false" selection-start-line="132" selection-start-column="9" selection-end-line="132" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sedona/index.html">
+    <entry file="file://$PROJECT_DIR$/sedona/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="136" column="57" lean-forward="true" selection-start-line="136" selection-start-column="57" selection-end-line="136" selection-end-column="57" />
+        <state relative-caret-position="238">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sedona/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="324" column="23" lean-forward="true" selection-start-line="324" selection-start-column="23" selection-end-line="324" selection-end-column="23" />
+        <state relative-caret-position="233">
+          <caret line="275" column="15" lean-forward="true" selection-start-line="275" selection-start-column="14" selection-end-line="275" selection-end-column="15" />
           <folding />
         </state>
       </provider>

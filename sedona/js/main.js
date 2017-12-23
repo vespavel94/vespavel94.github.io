@@ -6,15 +6,19 @@ $(document).ready(function () {
     });//search button and overlay script
 
 
-
-
-
-
-
-
-
-
-
+    $(".form-counter__increment").on("click", function () {
+        var input = $(this).siblings('input');
+        var counterValue = +input.val();
+        input.val(counterValue + 1);
+    });
+    $(".form-counter__decrement").on("click", function () {
+        var input = $(this).siblings('input');
+        var counterValue = +input.val();
+        input.val(counterValue - 1);
+        if(counterValue<1){
+            input.val(counterValue);
+        }
+    });
 
     $(".html_academy_copyright__link").mouseover(function () {
         $(".html_academy_copyright__logo").attr("src", "img/vector-smart-object-copy-8.png");
