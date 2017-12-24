@@ -8,7 +8,7 @@
     <title>Sedona</title>
     <link rel="stylesheet" href="main.css">
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="datepicker.css">
 </head>
 <body>
 
@@ -117,11 +117,11 @@
             <button class="hotel-search__button"><span>найти гостиницу</span></button>
 
             <form action="" class="hotel-search__form" onsubmit="return false;">
-                <div class="search-form__in-date-block">
+                <div class="search-form__in-date-block date-input">
                     <label for="search-form__in-date">дата заезда:</label>
                     <input type="text" id="search-form__in-date" placeholder="Укажите дату">
                 </div>
-                <div class="search-form__out-date-block">
+                <div class="search-form__out-date-block date-input">
                     <label for="search-form__out-date">дата выезда:</label>
                     <input type="text" id="search-form__out-date" placeholder="Укажите дату">
                 </div>
@@ -174,5 +174,7 @@
         </div>
     </footer>
 </div>
+<script src="js/main.js"></script>
+<script src="js/datepicker.js"></script>
 </body>
 </html>

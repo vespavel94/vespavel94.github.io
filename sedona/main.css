@@ -303,10 +303,14 @@ header {
     display: block;
 }
 
-.hotel-search__form div {
+.hotel-search__form > div {
     display: flex;
     justify-content: space-between;
     margin-bottom: 29px;
+}
+
+.date-input{
+    position: relative;
 }
 
 .search-form__optional-data {
@@ -314,6 +318,7 @@ header {
 }
 
 .search-form__optional-data div {
+    display: flex;
     margin: 0;
 }
 
