@@ -2,22 +2,22 @@
 var trigger = $(".date-input input");
 const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 var date = new Date();
-const currDay = date.getDate();
+var currDay = date.getDate();
+var options = {
+    month: 'long'
+};
 
+trigger.on("click", renderDatepicker);
 
-trigger.on("click", function () {
-    $(document).on("mouseup", function () {
-        if ($(".cal-container").has(event.target).length === 0) {
-            $(".cal-container").remove();
-            $(document).unbind("mouseup");
-        }
-    });
+function renderDatepicker() {
+    console.log($(this));
+    $(document).on("mouseup", removeDatepicker);
 
     var calendarWrapper = $(document.createElement("div"));
     calendarWrapper.addClass("cal-container");
     calendarWrapper.html("<div class=\"cal-container__header\">\n" +
         "    <button class=\"prev\">Prev</button>\n" +
-        "    <span class=\"curr-year\">2017</span>\n" +
+        "    <span class=\"curr-month-year\">" + date.toLocaleString("ru", options) + " " + date.getFullYear() + "</span>\n" +
         "    <button class=\"next\">next</button>\n" +
         "  </div>\n" +
         "  <div class=\"cal-container__days-row\">\n" +
@@ -53,15 +53,31 @@ trigger.on("click", function () {
         }
         cell.appendTo(dateWrapper);
     }
+
     dateWrapper.appendTo($(calendarWrapper));
-    calendarWrapper.appendTo($(this).parent());
+    console.log($(this));
+    console.log($(this).closest(".date-input"));
+    calendarWrapper.appendTo($(this).closest(".date-input"));
+
+
     $(".day_cell").on("click", insertDate);
-});
+    $(".next").on("click", function () {
+        console.log($(this));
+        $(".cal-container").remove();
+        date.setMonth(date.getMonth() + 1);
+        console.log($(this));
+        renderDatepicker.call($(this));
+    })
+}
 
 function insertDate() {
-    var options = {
-        month: 'long'
-    };
     $(this).parents(".date-input").children("input").val($(this).html() + "  " + date.toLocaleString("ru", options) + "  " + date.getFullYear());
+}
+
+function removeDatepicker() {
+    if ($(".cal-container").has(event.target).length === 0) {
+        $(".cal-container").remove();
+        $(document).unbind("mouseup");
+    }
 }
 
