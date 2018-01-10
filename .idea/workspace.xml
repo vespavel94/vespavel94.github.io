@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c0c25dd-f4a7-4577-91ec-3b47dac8a952" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/sedona/datepicker.css" afterPath="$PROJECT_DIR$/sedona/datepicker.css" />
-      <change beforePath="$PROJECT_DIR$/sedona/main.css" afterPath="$PROJECT_DIR$/sedona/main.css" />
-    </list>
+    <list default="true" id="1c0c25dd-f4a7-4577-91ec-3b47dac8a952" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -190,12 +186,12 @@
       <workItem from="1515197763599" duration="576000" />
       <workItem from="1515198354650" duration="2391000" />
       <workItem from="1515438648666" duration="56000" />
-      <workItem from="1515619984149" duration="827000" />
+      <workItem from="1515619984149" duration="1098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90108000" />
+    <option name="totallyTimeSpent" value="90379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
