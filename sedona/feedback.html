@@ -32,14 +32,66 @@
             </ul>
         </nav>
     </header>
-    <div class="intro__wallpaper">
-        <picture class="intro__img__text">
-            <source srcset="img/text-index-svg.png" media="(min-width: 768px)">
+    <div class="intro__wallpaper feedback__wallpaper">
+        <picture class="intro__img__text feedback__wallpaper__img__text">
+            <source srcset="img/text-sedona-feedback.png" media="(min-width: 768px)">
             <img src="img/text-index-svg-mobile.png" alt="logo-text">
         </picture>
     </div>
 
-    
+    <div class="feedback__intro">
+        <h2>оставьте свой отзыв</h2>
+        <p>помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещеных вами достопримечательностях</p>
+    </div>
+
+    <form action="" class="feedback-form" onsubmit="return false;">
+        <fieldset class="impression-field">
+            <legend>ваше общее впечатление:</legend>
+            <label class="impression-field__item">
+                <input type="radio" name="impression" class="impression-field__item__checkbox" checked>
+                <div class="impression-field__item__checkbox__body"></div>
+                <span>Скорее положительное</span>
+            </label>
+            <label class="impression-field__item">
+                <input type="radio" name="impression" class="impression-field__item__checkbox">
+                <div class="impression-field__item__checkbox__body"></div>
+                <span>Скорее отрицательное</span>
+            </label>
+            <label class="impression-field__item">
+                <input type="radio" name="impression" class="impression-field__item__checkbox">
+                <div class="impression-field__item__checkbox__body"></div>
+                <span>Затрудняюсь ответить</span>
+            </label>
+        </fieldset>
+        <fieldset class="name-field">
+            <legend>представьтесь:</legend>
+            <label>
+                <span>имя*:</span>
+                <input type="text" class="name-field__item" placeholder="Ваше имя">
+            </label>
+            <label>
+                <span>фамилия*:</span>
+                <input type="text" class="name-field__item" placeholder="Ваша фамилия">
+            </label>
+            <label>
+                <span>отчество:</span>
+                <input type="text" class="name-field__item" placeholder="Ваше отчество">
+            </label>
+        </fieldset>
+        <fieldset class="contacts-field">
+            <legend>контактная информация:</legend>
+            <div>
+                <span>телефон*</span>
+                <input type="text" placeholder="Введите телефон">
+            </div>
+            <div>
+                <span>электронная почта*</span>
+                <input type="text" placeholder="Введите e-mail">
+            </div>
+        </fieldset>
+        <fieldset class="visited-field"></fieldset>
+        <fieldset class="review-field"></fieldset>
+    </form>
 
     <footer class="footer">
         <div class="footer__column">
