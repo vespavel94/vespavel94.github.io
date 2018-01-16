@@ -692,6 +692,9 @@ header {
   height: 300px;
   &__img__text {
     padding-top: 109px;
+    @media (max-width: 768px){
+      max-width: 229px;
+    }
   }
 }
 
@@ -722,7 +725,7 @@ header {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  input[type="text"]{
+  input[type="text"] {
     border: none;
     box-sizing: border-box;
     display: inline-block;
@@ -736,15 +739,18 @@ header {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     width: 100%;
-    &:focus{
+    &:focus {
       background-color: #ffffff;
       border: 4px solid #f2f2f2;
       padding-left: 18px;
     }
   }
+  @media (max-width: 1100px) {
+    width: 640px;
+  }
 }
 
-fieldset{
+fieldset {
   border: none;
   legend {
     margin-bottom: 70px;
@@ -752,8 +758,11 @@ fieldset{
     font-size: 21px;
     color: #000000;
     font-weight: 700;
+    @media (max-width: 1100px) {
+      padding-left: 0;
+    }
   }
-  label:last-child{
+  label:last-child {
     margin-bottom: 0;
   }
 }
@@ -800,35 +809,149 @@ fieldset{
   }
 }
 
-.name-field{
+.name-field {
   padding-left: 76px;
   box-sizing: border-box;
   width: 50%;
-  legend{
+  legend {
     padding: 0;
   }
-  label{
+  label {
     display: flex;
     align-items: center;
     margin-bottom: 25px;
-    span{
+    span {
       margin-right: 15px;
       color: #515151;
       font-size: 14px;
     }
   }
+  @media (max-width: 1100px) {
+    padding-left: 40px;
+  }
 }
 
-.contacts-field{
+.contacts-field {
+  margin-top: 75px;
   width: 960px;
   border-top: 1px solid #dbdbdb;
-  display: flex;
-  legend{
+  legend {
     padding: 0;
     text-align: center;
+    width: 400px;
   }
-  div{
+  label {
     width: 50%;
-    display: inline;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    float: left;
+    &:after {
+      content: "";
+      clear: both;
+    }
+    .feedback-form__contacts-field__input-phone {
+      &:before {
+        background: #e6e6e6 url("../img/phone.png") no-repeat center;
+      }
+    }
+    .feedback-form__contacts-field__input-mail {
+      &:before {
+        background: #e6e6e6 url("../img/mail.png") no-repeat center;
+      }
+    }
+    div {
+      position: relative;
+      width: 100%;
+      &:before {
+        content: "";
+        width: 58px;
+        height: 58px;
+        background-color: #e6e6e6;
+        position: absolute;
+        right: 0;
+        display: block;
+        clear: both;
+      }
+      input {
+        padding: 0 80px 0 22px !important;
+      }
+    }
+    &:nth-child(2) {
+      padding-right: 56px;
+    }
+    span {
+      font-size: 14px;
+      color: #515151;
+      margin-right: 16px;
+      white-space: nowrap;
+    }
   }
 }
+
+.visited-field {
+  margin-top: 60px;
+  width: 100%;
+  border-top: 1px solid #dbdbdb;
+  legend {
+    padding: 0;
+    text-align: center;
+    width: 400px;
+  }
+  &__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    span {
+      text-transform: none;
+      font-size: 18px;
+      color: #000000;
+      font-weight: 700;
+    }
+    &__checkbox {
+      display: none;
+      &__body {
+        width: 58px;
+        height: 58px;
+        display: inline-block;
+        border-radius: 20%;
+        background-color: #f2f2f2;
+        position: relative;
+        margin-right: 22px;
+      }
+      &:checked + .visited-field__item__checkbox__body {
+        background: #e6e6e6 url("../img/tick.png") no-repeat center;
+      }
+    }
+  }
+}
+
+.review-field {
+  margin-top: 60px;
+  width: 100%;
+  border-top: 1px solid #dbdbdb;
+  legend {
+    padding: 0;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 62px;
+  }
+  &__textarea {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    height: 160px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 22px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+  }
+}
+
+
+

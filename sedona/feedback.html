@@ -35,7 +35,7 @@
     <div class="intro__wallpaper feedback__wallpaper">
         <picture class="intro__img__text feedback__wallpaper__img__text">
             <source srcset="img/text-sedona-feedback.png" media="(min-width: 768px)">
-            <img src="img/text-index-svg-mobile.png" alt="logo-text">
+            <img src="img/text-feedback-svg-mobile.png" alt="logo-text">
         </picture>
     </div>
 
@@ -80,17 +80,49 @@
         </fieldset>
         <fieldset class="contacts-field">
             <legend>контактная информация:</legend>
-            <div>
-                <span>телефон*</span>
-                <input type="text" placeholder="Введите телефон">
-            </div>
-            <div>
-                <span>электронная почта*</span>
-                <input type="text" placeholder="Введите e-mail">
+            <label>
+                <span>телефон*:</span>
+                <div class="feedback-form__contacts-field__input-phone">
+                    <input type="text" placeholder="Введите телефон">
+                </div>
+            </label>
+            <label>
+                <span>электронная почта*:</span>
+                <div class="feedback-form__contacts-field__input-mail">
+                    <input type="text" placeholder="Введите e-mail">
+                </div>
+            </label>
+        </fieldset>
+        <fieldset class="visited-field">
+            <legend>посещенные достопримечательности</legend>
+            <div class="visited-field__item-wrapper">
+                <label class="visited-field__item">
+                    <input type="checkbox" class="visited-field__item__checkbox">
+                    <div class="visited-field__item__checkbox__body"></div>
+                    <span>Мост Дьявола</span>
+                </label>
+                <label class="visited-field__item">
+                    <input type="checkbox" class="visited-field__item__checkbox">
+                    <div class="visited-field__item__checkbox__body"></div>
+                    <span>Гора-Колокол</span>
+                </label>
+                <label class="visited-field__item">
+                    <input type="checkbox" class="visited-field__item__checkbox">
+                    <div class="visited-field__item__checkbox__body"></div>
+                    <span>Слайд-парк</span>
+                </label>
+                <label class="visited-field__item">
+                    <input type="checkbox" class="visited-field__item__checkbox">
+                    <div class="visited-field__item__checkbox__body"></div>
+                    <span>Красные скалы</span>
+                </label>
             </div>
         </fieldset>
-        <fieldset class="visited-field"></fieldset>
-        <fieldset class="review-field"></fieldset>
+        <fieldset class="review-field">
+            <legend>опишите свои эмоции:</legend>
+            <textarea cols="30" rows="10" class="review-field__textarea"
+                      placeholder="Опишите подробно свои восторги"></textarea>
+        </fieldset>
     </form>
 
     <footer class="footer">
