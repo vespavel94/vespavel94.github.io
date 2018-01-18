@@ -4,7 +4,6 @@
     <list default="true" id="1c0c25dd-f4a7-4577-91ec-3b47dac8a952" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/sedona/css/main.css" afterPath="$PROJECT_DIR$/sedona/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/sedona/feedback.html" afterPath="$PROJECT_DIR$/sedona/feedback.html" />
       <change beforePath="$PROJECT_DIR$/sedona/sass/main.scss" afterPath="$PROJECT_DIR$/sedona/sass/main.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +20,8 @@
           <file leaf-file-name="feedback.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sedona/feedback.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="810">
-                  <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+                <state relative-caret-position="657">
+                  <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -45,8 +44,8 @@
           <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sedona/sass/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="524">
-                  <caret line="719" column="1" lean-forward="true" selection-start-line="719" selection-start-column="1" selection-end-line="719" selection-end-column="1" />
+                <state relative-caret-position="795">
+                  <caret line="988" column="0" lean-forward="true" selection-start-line="988" selection-start-column="0" selection-end-line="988" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -111,6 +110,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,8 +128,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,12 +186,13 @@
       <workItem from="1515694351926" duration="86000" />
       <workItem from="1515887736837" duration="4750000" />
       <workItem from="1515920765224" duration="20440000" />
-      <workItem from="1516049153303" duration="11734000" />
+      <workItem from="1516049153303" duration="13005000" />
+      <workItem from="1516227498515" duration="2996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128546000" />
+    <option name="totallyTimeSpent" value="132813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -467,16 +467,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sedona/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="719" column="1" lean-forward="true" selection-start-line="719" selection-start-column="1" selection-end-line="719" selection-end-column="1" />
+        <state relative-caret-position="795">
+          <caret line="988" column="0" lean-forward="true" selection-start-line="988" selection-start-column="0" selection-end-line="988" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sedona/feedback.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="51" column="37" lean-forward="true" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+        <state relative-caret-position="657">
+          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
           <folding />
         </state>
       </provider>

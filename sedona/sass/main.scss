@@ -692,7 +692,7 @@ header {
   height: 300px;
   &__img__text {
     padding-top: 109px;
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       max-width: 229px;
     }
   }
@@ -762,9 +762,6 @@ fieldset {
       padding-left: 0;
     }
   }
-  label:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .impression-field {
@@ -791,6 +788,9 @@ fieldset {
       font-weight: 700;
       text-transform: none;
     }
+  }
+  label:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -825,6 +825,9 @@ fieldset {
       color: #515151;
       font-size: 14px;
     }
+    label:last-child {
+      margin-bottom: 0;
+    }
   }
   @media (max-width: 1100px) {
     padding-left: 40px;
@@ -833,7 +836,7 @@ fieldset {
 
 .contacts-field {
   margin-top: 75px;
-  width: 960px;
+  width: 100%;
   border-top: 1px solid #dbdbdb;
   legend {
     padding: 0;
@@ -873,18 +876,30 @@ fieldset {
         display: block;
         clear: both;
       }
+      @media (max-width: 1100px) {
+        margin-top: 5px;
+      }
       input {
         padding: 0 80px 0 22px !important;
       }
     }
     &:nth-child(2) {
       padding-right: 56px;
+      @media (max-width: 1100px) {
+        margin-bottom: 28px;
+      }
     }
     span {
       font-size: 14px;
       color: #515151;
       margin-right: 16px;
       white-space: nowrap;
+    }
+    @media (max-width: 1100px) {
+      clear: both;
+      width: 100%;
+      padding-right: 0 !important;
+      display: block;
     }
   }
 }
@@ -901,10 +916,18 @@ fieldset {
   &__item-wrapper {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1100px) {
+      flex-wrap: wrap;
+      padding-left: 85px;
+    }
   }
   &__item {
     display: flex;
     align-items: center;
+    @media (max-width: 1100px) {
+      width: 50%;
+      margin-bottom: 15px;
+    }
     span {
       text-transform: none;
       font-size: 18px;
@@ -952,6 +975,18 @@ fieldset {
     outline: none;
   }
 }
+
+//@media (max-width: 768px) {
+//  .feedback-form{
+//    display: flex;
+//    flex-direction: column;
+//  }
+//  fieldset{
+//    width: 100%!important;
+//  }
+//}
+
+
 
 
 
