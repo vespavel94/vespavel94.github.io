@@ -83,7 +83,7 @@ header {
 
 .intro__wallpaper {
   height: 518px;
-  background-image: url("../img/intro-triangle-svg.png"), url("../img/back-desktop-jpg.jpg");
+  background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
   background-size: auto, 1200px 518px;
   background-repeat: no-repeat;
   background-position: 50% bottom;
@@ -162,11 +162,11 @@ header {
   width: 100%;
   max-width: 800px;
   &:nth-child(2) {
-    background: url("../img/photo-city-1x.jpg") no-repeat center;
+    background: url("../img/photo-city-desktop@2x.jpg") no-repeat center;
     background-size: cover;
   }
   &:nth-child(1) {
-    background: url("../img/photo-bridge-1x-desktop.jpg") no-repeat center;
+    background: url("../img/photo-bridge-desktop@2x.jpg") no-repeat center;
     background-size: cover;
   }
 }
@@ -406,15 +406,15 @@ header {
 }
 
 .twitter {
-  background: #81b3d2 url("../img/icon-twitter-svg.png") no-repeat center;
+  background: #81b3d2 url("../img/icon-twitter.svg") no-repeat center;
 }
 
 .facebook {
-  background: #81b3d2 url("../img/icon-facebook-svg.png") no-repeat center;
+  background: #81b3d2 url("../img/icon-facebook.svg") no-repeat center;
 }
 
 .youtube {
-  background: #81b3d2 url("../img/icon-youtube-svg.png") no-repeat center;
+  background: #81b3d2 url("../img/icon-youtube.svg") no-repeat center;
 }
 
 .html_academy_copyright {
@@ -447,24 +447,24 @@ header {
 
 @media (max-width: 1200px) and (min-width: 520px) {
   .reason__img__block:nth-child(2) {
-    background-image: url("../img/photo-city-1x-tablet.jpg");
+    background-image: url("../img/photo-city-tablet@2x.jpg");
     height: 256px;
   }
 
   .reason__img__block:nth-child(1) {
-    background-image: url("../img/photo-bridge-1x-tablet.jpg");
+    background-image: url("../img/photo-bridge-tablet@2x.jpg");
     height: 256px;
   }
 }
 
 @media (max-width: 519px) {
   .reason__img__block:nth-child(2) {
-    background-image: url("../img/photo-city-1x-mobile.jpg");
+    background-image: url("../img/photo-city-mobile@2x.jpg");
     height: 256px;
   }
 
   .reason__img__block:nth-child(1) {
-    background-image: url("../img/photo-bridge-1x-mobile.jpg");
+    background-image: url("../img/photo-bridge-tablet@2x.jpg");
     height: 260px;
   }
 }
@@ -535,9 +535,9 @@ header {
   .intro__wallpaper {
     padding-top: 55px;
     height: 389px;
-    background-image: url("../img/intro-triangle-svg_tablet.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
     background-position: 50% bottom, 50% 45px;
-    background-size: auto, cover;
+    background-size: cover, cover;
     background-repeat: no-repeat;
   }
 
@@ -584,11 +584,11 @@ header {
   }
 
   .reasons__row:nth-child(2) .reason--blue {
-    padding-top: 93px;
-    background-image: url("../img/white copy 2@1x.png");
+    padding-top: 120px;
+    background-image: url("../img/bg-triangle.svg");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 103%;
   }
 
   .reasons__icon__row {
