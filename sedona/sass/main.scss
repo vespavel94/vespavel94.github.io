@@ -1036,6 +1036,49 @@ fieldset {
   }
 }
 
+.feedback-form__submit{
+  margin: 58px 0 66px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  &__button{
+    width: 480px;
+    height: 58px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    font-family: "PT Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    &:hover {
+      background-color: #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
+    }
+  }
+  @media (max-width: 1100px){
+    flex-direction: column;
+    &__button{
+      width: 100%;
+    }
+    span{
+      margin-top: 21px;
+    }
+  }
+  @media (max-width: 768px){
+    margin: 51px 0 42px 0;
+    span{
+      display: none;
+    }
+  }
+}
+
 
 
 
