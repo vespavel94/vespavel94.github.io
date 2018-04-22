@@ -791,10 +791,10 @@ header {
 }
 
 .feedback__intro {
-  padding: 108px 20px 0;
+  padding: 0 20px;
   text-align: center;
   max-width: 440px;
-  margin: 0 auto;
+  margin: 108px auto 0;
 }
 
 .feedback__intro h2 {
@@ -1329,8 +1329,23 @@ fieldset legend {
   grid-template-areas: "big-photo big-photo big-photo";
 }
 
+@media (max-width: 1200px) {
+  .photo-blog {
+    grid-template: auto/1fr 1fr;
+    grid-template-areas: "big-photo big-photo";
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
 .photo-blog__item {
   position: relative;
+}
+
+@media (max-width: 1200px) {
+  .photo-blog__item picture img {
+    width: 100%;
+  }
 }
 
 .photo-blog__item:first-child {
@@ -1377,4 +1392,84 @@ fieldset legend {
   font-family: "Arial";
   text-transform: none;
   font-weight: 100;
+}
+
+.photo-blog__item__info__like-panel span {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  top: -2px;
+  margin-left: 7px;
+}
+
+.video-blog {
+  margin-bottom: 80px;
+}
+
+.video-blog__header {
+  margin-top: 73px;
+}
+
+.video-blog__player {
+  max-width: 800px;
+  height: 500px;
+  margin: 10px auto 0;
+  position: relative;
+}
+
+.video-blog__player__controls {
+  position: absolute;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px;
+  height: 92px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.video-blog__player__controls svg {
+  fill: #ffffff;
+  cursor: pointer;
+}
+
+.video-blog__player__controls svg:hover {
+  fill: #333333;
+}
+
+.video-blog__player__controls svg:active {
+  fill: #c1c1c1;
+}
+
+.video-blog__player__controls__progress-bar {
+  width: 540px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.video-blog__player__controls__progress-bar:after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 40px;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  top: -3px;
+  cursor: pointer;
 }

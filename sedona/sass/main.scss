@@ -704,10 +704,10 @@ header {
 }
 
 .feedback__intro {
-  padding: 108px 20px 0;
+  padding: 0 20px;
   text-align: center;
   max-width: 440px;
-  margin: 0 auto;
+  margin: 108px auto 0;
   h2 {
     margin-bottom: 30px;
     color: #333333;
@@ -1086,8 +1086,19 @@ fieldset {
   display: grid;
   grid-template: 400px 267px/1fr 1fr 1fr;
   grid-template-areas:"big-photo big-photo big-photo";
+  @media (max-width:1200px){
+    grid-template: auto/1fr 1fr;
+    grid-template-areas:"big-photo big-photo";
+    width: 85%;
+    margin: 0 auto;
+  }
   &__item{
     position: relative;
+    picture img{
+      @media (max-width:1200px){
+        width: 100%;
+      }
+    }
     &:first-child{
       grid-area: big-photo;
     }
@@ -1118,9 +1129,72 @@ fieldset {
           font-weight: 100;
         }
       }
+      &__like-panel{
+        span{
+          color: $white;
+          font-size: 14px;
+          font-weight: 700;
+          position: relative;
+          top: -2px;
+          margin-left: 7px;
+        }
+      }
     }
   }
 }
+
+.video-blog{
+  margin-bottom: 80px;
+  &__header{
+    margin-top: 73px;
+  }
+  &__player{
+    max-width: 800px;
+    height: 500px;
+    margin: 10px auto 0;
+    position: relative;
+    &__controls{
+      position: absolute;
+      bottom: 0;
+      box-sizing: border-box;
+      padding: 40px;
+      height: 92px;
+      width: 100%;
+      display: flex;
+      background-color: rgba(0,0,0,.5);
+      align-items: center;
+      justify-content: space-between;
+      svg{
+        fill: $white;
+        cursor: pointer;
+        &:hover{
+          fill: #333333;
+        }
+        &:active{
+          fill: #c1c1c1;
+        }
+      }
+      &__progress-bar{
+        width: 540px;
+        height: 4px;
+        background-color: rgba(255,255,255,.4);
+        &:after{
+          content: "";
+          display: block;
+          position: relative;
+          left: 40px;
+          width: 10px;
+          height: 10px;
+          background-color: $white;
+          border-radius: 10px;
+          top: -3px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
 
 
 
