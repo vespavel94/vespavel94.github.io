@@ -1049,7 +1049,7 @@ fieldset {
     color: #ffffff;
     font-size: 21px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 25px;
     font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
     cursor: pointer;
@@ -1075,6 +1075,49 @@ fieldset {
     margin: 51px 0 42px 0;
     span{
       display: none;
+    }
+  }
+}
+
+//------------------STYLE_FOR_GALLERY.HTML----------------------------
+
+.photo-blog{
+  width: 100%;
+  display: grid;
+  grid-template: 400px 267px/1fr 1fr 1fr;
+  grid-template-areas:"big-photo big-photo big-photo";
+  &__item{
+    position: relative;
+    &:first-child{
+      grid-area: big-photo;
+    }
+    &__info{
+      position: absolute;
+      height: 80px;
+      width: 100%;
+      box-sizing: border-box;
+      bottom:0;
+      background-color: rgba(0,0,0,.3);
+      padding: 22px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &__description{
+        font-size: 14px;
+        color:$white;
+        &__header{
+          font-family: "PT Sans";
+          line-height: 14px;
+          font-weight: 700;
+          font-size: 14px;
+          margin-bottom: 7px;
+        }
+        &__author{
+          font-family: "Arial";
+          text-transform: none;
+          font-weight: 100;
+        }
+      }
     }
   }
 }

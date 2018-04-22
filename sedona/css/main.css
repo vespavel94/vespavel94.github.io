@@ -1281,7 +1281,7 @@ fieldset legend {
   color: #ffffff;
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 25px;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
@@ -1320,4 +1320,61 @@ fieldset legend {
   .feedback-form__submit span {
     display: none;
   }
+}
+
+.photo-blog {
+  width: 100%;
+  display: grid;
+  grid-template: 400px 267px/1fr 1fr 1fr;
+  grid-template-areas: "big-photo big-photo big-photo";
+}
+
+.photo-blog__item {
+  position: relative;
+}
+
+.photo-blog__item:first-child {
+  grid-area: big-photo;
+}
+
+.photo-blog__item__info {
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 22px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.photo-blog__item__info__description {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.photo-blog__item__info__description__header {
+  font-family: "PT Sans";
+  line-height: 14px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.photo-blog__item__info__description__author {
+  font-family: "Arial";
+  text-transform: none;
+  font-weight: 100;
 }
