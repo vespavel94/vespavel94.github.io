@@ -314,6 +314,14 @@ header {
   transition: 3.5s;
 }
 
+.hotel-search__form > div > input:hover {
+  background-color: #e5e5e5;
+}
+
+.hotel-search__form > div > input:active {
+  background-color: #d5d5d5;
+}
+
 .hotel-search__form input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -383,6 +391,14 @@ header {
   height: 38px;
   width: 38px;
   background-color: #f2f2f2;
+}
+
+.form__counter button:hover {
+  background-color: #e5e5e5;
+}
+
+.form__counter button:active {
+  background-color: #d5d5d5;
 }
 
 .hotel-search__form label {
