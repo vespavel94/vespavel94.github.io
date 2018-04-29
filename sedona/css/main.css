@@ -1595,13 +1595,12 @@ fieldset legend {
 .video-blog__player__controls__progress-bar__body {
   background-color: rgba(255, 255, 255, 0.4);
   height: 4px;
+  position: relative;
 }
 
-.video-blog__player__controls__progress-bar__body:after {
-  content: "";
-  display: block;
-  position: relative;
-  left: 40px;
+.video-blog__player__controls__progress-bar__body .sliderGap {
+  position: absolute;
+  left: 0px;
   width: 10px;
   height: 10px;
   background-color: #ffffff;
