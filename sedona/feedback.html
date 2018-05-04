@@ -64,15 +64,21 @@
             <legend>представьтесь:</legend>
             <label>
                 <span>имя*:</span>
-                <input type="text" class="name-field__item" placeholder="Ваше имя">
+                <div class="validation-input-wrapper">
+                    <input type="text" class="name-field__item check-name" placeholder="Ваше имя" required>
+                </div>
             </label>
             <label>
                 <span>фамилия*:</span>
-                <input type="text" class="name-field__item" placeholder="Ваша фамилия">
+                <div class="validation-input-wrapper">
+                    <input type="text" class="name-field__item check-name" placeholder="Ваша фамилия" required>
+                </div>
             </label>
             <label>
                 <span>отчество:</span>
-                <input type="text" class="name-field__item" placeholder="Ваше отчество">
+                <div class="validation-input-wrapper">
+                    <input type="text" class="name-field__item check-name" placeholder="Ваше отчество">
+                </div>    
             </label>
         </fieldset>
         <fieldset class="contacts-field">
@@ -80,13 +86,17 @@
             <label>
                 <span>телефон*:</span>
                 <div class="feedback-form__contacts-field__input-phone">
-                    <input type="text" placeholder="Введите телефон">
+                    <div class="validation-input-wrapper">
+                        <input type="text" placeholder="Введите телефон" class="check-phone" required>
+                    </div>
                 </div>
             </label>
             <label>
                 <span>электронная почта*:</span>
                 <div class="feedback-form__contacts-field__input-mail">
-                    <input type="text" placeholder="Введите e-mail">
+                    <div class="validation-input-wrapper">
+                        <input type="text" placeholder="Введите e-mail" class="check-mail" required>
+                    </div>
                 </div>
             </label>
         </fieldset>
@@ -121,7 +131,7 @@
                       placeholder="Опишите подробно свои восторги"></textarea>
         </fieldset>
         <div class="feedback-form__submit">
-            <button class="feedback-form__submit__button">отправить отзыв</button>
+            <button class="feedback-form__submit__button checkForm">отправить отзыв</button>
             <span>* - обязательные поля</span>
         </div>
     </form>
@@ -147,5 +157,6 @@
     </footer>
 </div>
 <script src="js/main.js"></script>
+<script src="js/validation.js"></script>
 </body>
 </html>

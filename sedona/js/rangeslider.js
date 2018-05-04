@@ -1,7 +1,6 @@
 var sliderGap = $(".sliderGap");
 sliderGap.on("mousedown touchstart",{min: 0, max: 100}, initSlider);
 
-
 function initSlider(e){
   var startX = $(this).parent().offset().left,
 		sliderWidth = parseInt($(this).parent().css("width")),

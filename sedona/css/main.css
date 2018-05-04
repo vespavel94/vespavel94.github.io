@@ -869,6 +869,14 @@ header {
   padding-left: 18px;
 }
 
+.feedback-form input[type="text"] .not-valid {
+  border: 4px solid red;
+}
+
+.feedback-form input[type="text"] .is-valid {
+  border: 4px solid green;
+}
+
 @media (max-width: 1100px) {
   .feedback-form {
     max-width: 640px;
@@ -1050,19 +1058,6 @@ fieldset legend {
 }
 
 .contacts-field label .feedback-form__contacts-field__input-phone:before {
-  background: #e6e6e6 url("../img/phone.png") no-repeat center;
-}
-
-.contacts-field label .feedback-form__contacts-field__input-mail:before {
-  background: #e6e6e6 url("../img/mail.png") no-repeat center;
-}
-
-.contacts-field label div {
-  position: relative;
-  width: 100%;
-}
-
-.contacts-field label div:before {
   content: "";
   width: 58px;
   height: 58px;
@@ -1071,10 +1066,30 @@ fieldset legend {
   right: 0;
   display: block;
   clear: both;
+  z-index: 3;
+  background: #e6e6e6 url("../img/phone.png") no-repeat center;
+}
+
+.contacts-field label .feedback-form__contacts-field__input-mail:before {
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  position: absolute;
+  right: 0;
+  display: block;
+  clear: both;
+  z-index: 3;
+  background: #e6e6e6 url("../img/mail.png") no-repeat center;
+}
+
+.contacts-field label > div {
+  position: relative;
+  width: 100%;
 }
 
 @media (max-width: 1100px) {
-  .contacts-field label div {
+  .contacts-field label > div {
     margin-top: 5px;
   }
 }
@@ -1608,4 +1623,73 @@ fieldset legend {
           border-radius: 10px;
   top: -3px;
   cursor: pointer;
+}
+
+.validation-input-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.validation-input-wrapper .is-valid + .validator-icon {
+  background-image: url(/img/icons8-checkmark-yes-64.png);
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.validation-input-wrapper .not-valid + .validator-icon {
+  background-image: url(/img/icons8-cancel.svg);
+  background-position: center;
+  -webkit-background-size: 29px 29px;
+          background-size: 29px;
+}
+
+.error-msg {
+  color: white;
+  text-transform: none;
+  display: none;
+  position: absolute;
+  bottom: 58px;
+  padding: 0 17px;
+  background-color: red;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  left: 0;
+  white-space: nowrap;
+  font-size: 14px;
+  -webkit-border-radius: 8px 8px 0 0;
+          border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 426px) {
+  .error-msg {
+    white-space: pre-wrap;
+  }
+}
+
+.is-valid {
+  background-color: rgba(100, 255, 100, 0.4) !important;
+}
+
+.is-valid:focus {
+  border: 1px solid green !important;
+  padding-left: 21px !important;
+}
+
+.not-valid {
+  background-color: rgba(255, 100, 100, 0.4) !important;
+}
+
+.not-valid:focus {
+  border: 1px solid red !important;
+  padding-left: 21px !important;
+}
+
+.validator-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  top: 17px;
+  right: 17px;
 }
