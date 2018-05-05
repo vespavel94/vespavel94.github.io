@@ -65,13 +65,13 @@
             <label>
                 <span>имя*:</span>
                 <div class="validation-input-wrapper">
-                    <input type="text" class="name-field__item check-name" placeholder="Ваше имя" required>
+                    <input type="text" class="name-field__item check-name valid-required" placeholder="Ваше имя">
                 </div>
             </label>
             <label>
                 <span>фамилия*:</span>
                 <div class="validation-input-wrapper">
-                    <input type="text" class="name-field__item check-name" placeholder="Ваша фамилия" required>
+                    <input type="text" class="name-field__item check-name valid-required" placeholder="Ваша фамилия">
                 </div>
             </label>
             <label>
@@ -87,7 +87,7 @@
                 <span>телефон*:</span>
                 <div class="feedback-form__contacts-field__input-phone">
                     <div class="validation-input-wrapper">
-                        <input type="text" placeholder="Введите телефон" class="check-phone" required>
+                        <input type="text" placeholder="Введите телефон" class="check-phone valid-required">
                     </div>
                 </div>
             </label>
@@ -95,7 +95,7 @@
                 <span>электронная почта*:</span>
                 <div class="feedback-form__contacts-field__input-mail">
                     <div class="validation-input-wrapper">
-                        <input type="text" placeholder="Введите e-mail" class="check-mail" required>
+                        <input type="text" placeholder="Введите e-mail" class="check-mail valid-required">
                     </div>
                 </div>
             </label>
@@ -135,7 +135,7 @@
             <span>* - обязательные поля</span>
         </div>
     </form>
-
+    
     <footer class="footer">
         <div class="footer__column">
             <a href="#" class="footer__hashtag">#visitsedona</a>
@@ -156,7 +156,22 @@
         </div>
     </footer>
 </div>
-<script src="js/main.js"></script>
+
+<div class="popupFade">
+        <div class="popup-body popup-success">
+            <h2>Спасибо!</h2>
+            <p>Ваш отзыв много значит для нас. Спасибо за уделенное время, мы обязательно учтем Ваше мнение о нашей работе</p>
+            <button>Вернуться на сайт</button>
+        </div>
+
+        <div class="popup-body popup-error">
+            <h2>Упс!</h2>
+            <p>Похоже Вы ошиблись или не заполнили обязательные поля! Попробуйте еще раз! Это не так уж и сложно :)</p>
+            <button>Попробовать еще</button>
+        </div>
+</div>
+
 <script src="js/validation.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

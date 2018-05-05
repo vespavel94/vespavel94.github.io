@@ -1655,7 +1655,6 @@ fieldset legend {
   -webkit-border-radius: 0px;
           border-radius: 0px;
   left: 0;
-  white-space: nowrap;
   font-size: 14px;
   -webkit-border-radius: 8px 8px 0 0;
           border-radius: 8px 8px 0 0;
@@ -1692,4 +1691,64 @@ fieldset legend {
   right: 0;
   top: 17px;
   right: 17px;
+}
+
+.popupFade {
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  overflow: hidden;
+  z-index: 99;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.popupFade .popup-body {
+  width: 400px;
+  background-color: #ffffff;
+  position: absolute;
+  padding: 40px;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  top: 20%;
+}
+
+.popupFade .popup-body h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.popupFade .popup-body p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.popupFade .popup-body button {
+  width: 300px;
+  height: 58px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25px;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.popupFade .popup-body button:hover {
+  background-color: #669ec0;
+}
+
+.popupFade .popup-body button:active {
+  background-color: #5496bd;
 }
