@@ -251,7 +251,6 @@ header {
 }
 
 .hotel-search__button-overlay-wrapper {
-  z-index: 110;
   position: relative;
   max-width: 458px;
   margin: 0 auto;
@@ -303,15 +302,13 @@ header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: none;
+  max-width: 568px;
   width: 100%;
   position: absolute;
   background-color: #ffffff;
   -webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
           box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   padding: 55px;
-  -webkit-transition: 3.5s;
-  -o-transition: 3.5s;
-  transition: 3.5s;
 }
 
 .hotel-search__form > div > input:hover {
@@ -338,6 +335,24 @@ header {
   border: none;
   outline: none;
   padding: 14px;
+}
+
+@media (max-width: 768px) {
+  .hotel-search__form {
+    width: 320px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    padding: 20px;
+  }
+  .hotel-search__form > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .hotel-search__form--visible {
@@ -369,6 +384,10 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
 }
 
@@ -1751,4 +1770,20 @@ fieldset legend {
 
 .popupFade .popup-body button:active {
   background-color: #5496bd;
+}
+
+@media (max-width: 600px) {
+  .popupFade .popup-body {
+    max-width: 310px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px;
+  }
+  .popupFade .popup-body p {
+    font-size: 14px;
+  }
+  .popupFade .popup-body button {
+    width: 260px;
+    font-size: 18px;
+  }
 }

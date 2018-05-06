@@ -78,6 +78,9 @@ function showPopup(isFormValid){
         $(".popup-error").show();
       }
       $(document).on("mouseup", hidePopup);
+      $(".popup-body button").on("click", function(){
+        $(".popupFade").hide();
+      })
 }
 
 function hidePopup(event){
